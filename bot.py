@@ -17,7 +17,7 @@ def start(msg):
 
 
 
-@server.route('/' + TOKEN, methods=['POST'])
+@server.route('/' + TOKEN, methods=['POST', 'GET'])
 def getMessage():
     bot.process_new_updates([telebot.types.Update.de_json(request.stream.read().decode("utf-8"))])
     return "Your bot application is still active!", 200
