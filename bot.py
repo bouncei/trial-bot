@@ -26,7 +26,7 @@ def getMessage():
 @server.route("/")
 def webhook():
     bot.remove_webhook()
-    bot.set_webhook(url='/' + TOKEN)
+    bot.set_webhook(url='https://fast-meadow-58903.herokuapp.com/' + TOKEN)
     return "Application running!", 200
 
 
