@@ -16,5 +16,8 @@ TOKEN = "1920624938:AAEAsqDHsKqz0-QyIsb0qu5une0mvLVCLQw"
 ADMIN =  1190069449 
 
 
+SERVER_URL = os.getenv("https://fast-meadow-58903.herokuapp.com")
+
+
 bot = telebot.TeleBot(TOKEN)
 server = Flask(__name__)
